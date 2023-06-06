@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./note-list.css">
+    <title>lista</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="title-section">
+            <h1>notes list</h1>
+        </div>
+        <div class="notes" id="notes">
+        </div>
+        <div class="right-button">
+            <a href="./home.html"><img src="./assets/img/plusIcon-green.png" alt="aceptar"></a>
+        </div>
+    </div>
+    <div class="container-pop" id="container-pop" style="display: none;" >
+        <div class="popup">
+            <h2>Update Note</h2>
+            <label for="title">title</label>
+            <input id="title-pop" type="text">
+            <label for="content">content</label>
+            <input id="content-pop" type="text">
+            <button onclick="updateNote()" >send</button>
+        </div>
+    </div>
+
+
+    <script src="./list-note.js"></script>
+    <script src="./delete-note.js"></script>
+    <!-- <script src="./update-note.js"></script> -->
+</body>
+
+</html>
